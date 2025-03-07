@@ -39,7 +39,7 @@ class Registration:
         else:
             raise ValueError("Invalid payment method.")
 
-        self.payment_processor.process_payment(100.0)  # assuming a fixed payment amount for simplicity
+        self.payment_processor.process_payment(2000.0)  # assuming a fixed payment amount for simplicity
 
 
 if __name__ == "__main__":
