@@ -126,7 +126,6 @@ creative_writing_workshop/
 
 *** DIAGRAM:
 
-
                            +----------------------------+
                            |  UserRegistrationInterface  |
                            +----------------------------+
@@ -151,22 +150,30 @@ creative_writing_workshop/
 ====================================================================================================
 ====================================================================================================
 
+
 *** Description of the Diagram:
 
+Description of the Diagram:
 UserRegistrationInterface:
 
-This is the parent interface for all registration forms. It defines methods for collecting personal information, educational/professional details, and workshop preferences.
+This is the parent interface for all registration forms. It defines methods for collecting personal
+information, educational/professional details, and workshop preferences.
 UserForm (Abstract Class):
 
-This is an abstract class that implements the UserRegistrationInterface and holds shared methods for registration. The specific user forms (StudentFormUnder18, AdultFormOver18, and ProfessionalForm) inherit from this class and implement their specific data collection methods.
+This is an abstract class that implements the UserRegistrationInterface and holds shared methods
+for registration. The specific user forms (StudentFormUnder18, AdultFormOver18, and ProfessionalForm)
+inherit from this class and implement their specific data collection methods.
 PaymentProcessingInterface:
 
 This interface defines a process_payment() method, which is implemented by different payment methods.
 Payment Classes:
 
-Concrete classes like BankTransferPayment, PayPalPayment, VisaCardPayment, and InstallmentPayment implement the PaymentProcessingInterface and define how each type of payment is processed.
+Concrete classes like BankTransferPayment, PayPalPayment, VisaCardPayment,
+and InstallmentPayment implement the PaymentProcessingInterface and define how each type
+of payment is processed.
+
 Registration Flow:
 
-The Registration class creates a form (via the concrete form classes) and processes payment using one of the defined payment strategies (via PaymentProcessingInterface).
-
+The Registration class creates a form (via the concrete form classes) and processes payment
+using one of the defined payment strategies (via PaymentProcessingInterface).
 """
