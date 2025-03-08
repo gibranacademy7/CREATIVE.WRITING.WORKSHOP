@@ -180,9 +180,9 @@ using one of the defined payment strategies (via PaymentProcessingInterface).
 
 *** Summary of Design Patterns Used:
 
-Strategy Pattern	    Manages different payment methods.
-Factory Method	        Creates forms based on user type.
-Abstract Factory	    Separates the creation of registration forms and payment methods.
-Singleton Pattern	    Ensures a single instance for timestamp management.
-Interface Segregation	Separates interfaces for registration and payment processing.
+1. Strategy Pattern	    Manages different payment methods.
+2. Factory Method	        Creates forms based on user type.
+3. Abstract Factory	    Separates the creation of registration forms and payment methods.
+4. Singleton Pattern	    Ensures a single instance for timestamp management.
+5. Interface Segregation	Separates interfaces for registration and payment processing.
 """
