@@ -176,4 +176,13 @@ Registration Flow:
 
 The Registration class creates a form (via the concrete form classes) and processes payment
 using one of the defined payment strategies (via PaymentProcessingInterface).
+=============================================================================================
+
+*** Summary of Design Patterns Used:
+
+Strategy Pattern	    Manages different payment methods.
+Factory Method	        Creates forms based on user type.
+Abstract Factory	    Separates the creation of registration forms and payment methods.
+Singleton Pattern	    Ensures a single instance for timestamp management.
+Interface Segregation	Separates interfaces for registration and payment processing.
 """
